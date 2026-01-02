@@ -23,6 +23,26 @@ class Queue2:
         itr=self.head
         listltr=''
         while itr.next:
-            listltr+=str(itr.data)+' -> '
+            listltr+=str(itr.data) + ' -> '
             itr=itr.next
-        return itr
+        return listltr
+    
+    def includes(self,data):
+        result=False
+        itr=self.head
+        while itr.next:
+            if itr.data==data:
+                result=True
+                break
+            itr=itr.next
+        return result
+    
+
+mylist = Queue2()
+mylist.enqueue(3)
+mylist.enqueue(3)
+mylist.enqueue(3)
+mylist.enqueue(3)
+print(mylist)
+            
+        
