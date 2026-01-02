@@ -51,13 +51,7 @@ class Queue2:
         return result
     
 
-li = Queue2()
-li.enqueue(1)
-li.enqueue(2)
-li.enqueue(3)
-li.enqueue(4)
-result=li.includes(4)
-print(li,result)
+
 
             
         
